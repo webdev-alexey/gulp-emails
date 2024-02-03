@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+  lang="ru"
+>
+  @include('partials/head.html')
+
+  <body
+    style="margin: 0; padding: 0; min-width: 100%; background-color: #dde0e1"
+  >
+    <!--[if (gte mso 9)|(IE)]>
+      <style type="text/css">
+        body {
+          background-color: #dde0e1 !important;
+        }
+        body,
+        table,
+        td,
+        p,
+        a {
+          font-family: sans-serif, Arial, Helvetica !important;
+        }
+      </style>
+    <![endif]-->
+
+    <center
+      style="
+        width: 100%;
+        table-layout: fixed;
+        background-color: #dde0e1;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      "
+    >
+      <div
+        style="
+          max-width: 600px;
+          background-color: #fafdfe;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        "
+      >
+        @include('partials/preheader.html')
+
+        <!--[if (gte mso 9)|(IE)]>
+        <table width="600" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"
+          style="color:#565656;">
+        <tr>
+        <td>
+      <![endif]-->
+
+        <table
+          align="center"
+          border="0"
+          cellspacing="0"
+          cellpadding="0"
+          role="presentation"
+          style="
+            color: #565656;
+            font-family: 'Inter', sans-serif, Arial, Helvetica;
+            background-color: #fafdfe;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            max-width: 600px;
+          "
+        >
+          @include('partials/hero.html') @include('partials/cover.html')
+          @include('partials/two-cols.html')
+        </table>
+
+        <!--[if (gte mso 9)|(IE)]>
+        </td>
+        </tr>
+        </table>
+      <![endif]-->
+      </div>
+    </center>
+  </body>
+</html>
